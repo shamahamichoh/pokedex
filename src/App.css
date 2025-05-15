@@ -5,6 +5,11 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.App-logo:hover {
+  transform: scale(1.05);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +19,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1e1e24; /* slightly richer dark background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 40px;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f8f8f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+  margin-top: 1rem;
 }
 
 .App-link {
